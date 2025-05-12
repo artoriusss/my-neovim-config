@@ -1,5 +1,4 @@
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
@@ -92,3 +91,5 @@ vim.opt.undodir = vim.fn.expand('~/.vim/undodir')
 -- Enable persistent undo
 vim.opt.undofile = true
 
+-- For iron.nvim: insert a new cell block
+vim.api.nvim_set_keymap('n', '<leader>cc', 'o#%%<Esc>^d0', { noremap = true })

@@ -1,6 +1,7 @@
 return {
   'akinsho/bufferline.nvim',
-  version = "*",
+  branch = 'main',
+  -- version = "*",
   dependencies = 'nvim-tree/nvim-web-devicons',
   config = function()
     vim.opt.termguicolors = true
@@ -9,7 +10,7 @@ return {
       hover = {
         enabled = true,
         delay = 100,
-        reveal = {'close'}
+        reveal = {"close"}
       }
     }
     require("bufferline").setup({
